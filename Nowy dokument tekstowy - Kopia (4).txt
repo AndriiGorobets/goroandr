@@ -1,8 +1,8 @@
-// Sortowanie Przez Wybór
+// Sortowanie Przez WybÃ³r
 //--------------------------------------------------------
-// (C)2012 mgr Jerzy Wa³aszek
-// I Liceum Ogólnokszta³c¹ce
-// im. K. Brodziñskiego
+// (C)2012 mgr Jerzy WaÅ‚aszek
+// I Liceum OgÃ³lnoksztaÅ‚cÄ…ce
+// im. K. BrodziÅ„skiego
 // w Tarnowie
 //--------------------------------------------------------
 
@@ -14,28 +14,9 @@
 
 using namespace std;
 
-const int N = 20; // Liczebnoœæ zbioru.
+const int N = 20; // LiczebnoÅ›Ä‡ zbioru.
 
-// Program g³ówny
-//---------------
 
-int main()
-{
-  int d[N],i,j,pmin;
-  
-  cout << " Sortowanie przez wybor\n"
-          "------------------------\n"
-          " (C)2005 Jerzy Walaszek\n\n"
-          "Przed sortowaniem:\n\n";
-
-// Najpierw wype³niamy tablicê d[] liczbami pseudolosowymi
-// a nastêpnie wyœwietlamy jej zawartoœæ
-
-  srand((unsigned)time(NULL));
-
-  for(i = 0; i < N; i++) d[i] = rand() % 100;
-  for(i = 0; i < N; i++) cout << setw(4) << d[i];
-  cout << endl;
 
 // Sortujemy
 
@@ -47,7 +28,7 @@ int main()
     swap(d[pmin], d[j]);
   }
 
-// Wyœwietlamy wynik sortowania
+// WyÅ›wietlamy wynik sortowania
 
   cout << "Po sortowaniu:\n\n";
   for(i = 0; i < N; i++) cout << setw(4) << d[i];
